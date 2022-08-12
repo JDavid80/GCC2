@@ -68,7 +68,19 @@ li a:hover:not(.active) {
     font-family: calibri, sans-serif;
     font-size: 1.05em;
     text-align: center;
+}
+#nav-bar-horizontal
+{
     
-    
-  
+    display: inline-block;
+    width: 100%;
+}
+
+.list-menu-horizontal
+{
+    margin: 15px;
+    margin-top: 40px; 
+    font-size: 1em;
+    text-align: center;
+   
 }
