@@ -66,12 +66,11 @@ li a:hover:not(.active) {
     color: black;
     border-right: 1px solid #ff6b00!important;
     font-family: calibri, sans-serif;
-    font-size: 1.05em;
+    font-size: 1.3em;
     text-align: center;
 }
 #nav-bar-horizontal
 {
-    
     display: inline-block;
     width: 100%;
 }
@@ -82,5 +81,4 @@ li a:hover:not(.active) {
     margin-top: 40px; 
     font-size: 1em;
     text-align: center;
-   
 }
