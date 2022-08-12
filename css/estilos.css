@@ -3,9 +3,24 @@
     margin: 0;
 }
 .encabezado {
-    text-align: center;
-    display: grid;
     width: 100%;
-    height: 60px;
-    background-color: #fffefe;
+    background-color: #fffdfd;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px #c2c2c2; 
+    display: grid;
+    grid-template-columns: 200px 200px ;
+    grid-template-rows: 80px ;
+    grid-gap: 1rem;
+}
+.imagen_principal {
+    padding: 0 60px;
+    grid-row: 1 / 4;
+}
+.img_baner {
+    padding-top: 20px;
+    grid-column: 10 / 12;
+}
+.baner {
+    padding: 0;
+    margin: -2px;
 }
