@@ -18,9 +18,41 @@
 }
 .img_baner {
     padding-top: 20px;
-    grid-column: 10 / 12;
+    grid-column: 11 / 12;
 }
 .baner {
     padding: 0;
     margin: -2px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li {
+    float: left;
+    border-right:1px solid rgb(223, 214, 214);
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #3e8641;
+}
+
+.active {
+    background-color: #4CAF50;
 }
