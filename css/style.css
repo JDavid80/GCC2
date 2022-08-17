@@ -144,16 +144,8 @@ a {
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
       li:nth-child(3) .slide-circulo {
     color: #428bca;
-} */
-.colums {
-    text-align: center;
-    padding-top: 5%;
-}
-.three-columns {
-    width: 22%;
-    display: inline-block;
-}
-/* .contenedor{
+} 
+.contenedor{
     position: relative;
     display: inline-block;
     text-align: center;
@@ -169,3 +161,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 } */
+.texto {
+    text-align: center;
+    width: 85%;
+    padding: 10px 190px 10px 190px;
+}
