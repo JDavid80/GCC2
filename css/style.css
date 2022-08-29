@@ -1,4 +1,3 @@
-
 :root{
     --white: #f9f9f9;
     --black: #1e1f23;
@@ -19,7 +18,7 @@ body{
 a{
     text-decoration: none;
 }
-ul{
+.menu{
     list-style: none;
     font-size: 1.1em;
 }
@@ -42,11 +41,13 @@ ul{
 }
 .login {
     padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     width: 40px;
     filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(1431%) hue-rotate(201deg) brightness(88%) contrast(110%);
     cursor: pointer;
-    grid-column: 12/12;
-}
+} 
+
 .nav{
     width: 100%;
     height: 100%;
@@ -56,7 +57,7 @@ ul{
 }
 .menu a{
     display: block;
-    padding: 30px ;
+    padding: 30px 20px ;
     color: var(--blue);
     font-weight: 500;
 }
@@ -118,48 +119,11 @@ ul{
     margin-bottom: 30px;
 }
 
-.about {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.about_title {
-    color: #001A49;
-    cursor: pointer;
-}
-.subtitle {
-    color: var(--color-title);
-    font-size: 2em;
-    margin-bottom: 25px;
-}
-.about_paragraph {
-    line-height: 1.7;
-}
-.about_main {
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto))
-}
-.about_icons {
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    width: 360px;
-    overflow: hidden;
-    margin: 0 auto;
-    border: 3px solid rgba(84, 84, 212, 0.096);
-}
-.about_icon {
-    width: 60px;
-    filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(1431%) hue-rotate(201deg) brightness(88%) contrast(110%);
-    cursor: pointer;
-}
 .testimony{
-    background-color: rgba(84, 84, 212, 0.096);
+    background-color: rgba(187, 187, 216, 0.096);
     justify-content: center;
     padding: 30px 10px;
+    margin-bottom: 20px;
 }
 .testimony__container{
     display: grid;
@@ -196,6 +160,8 @@ ul{
 .testimony__texts{
     max-width: 800px;
     text-align: justify;
+    line-height: 200%;
+    font-size: 1.2em;
 }
 
 .testimony__course{
@@ -207,6 +173,80 @@ ul{
 .testimony__arrow{
     width: 90%;
     cursor: pointer;
+}
+.about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about_title {
+    color: #001A49;
+    cursor: pointer;
+}
+.subtitle {
+    color: var(--color-title);
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.about_paragraph {
+    line-height: 1.7;
+    font-size: 1.2em;
+}
+.about_main {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto))
+}
+.about_icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid rgba(84, 84, 212, 0.096);
+}
+.about_icon {
+    width: 60px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(1431%) hue-rotate(201deg) brightness(88%) contrast(110%);
+    cursor: pointer;
+}
+.knowledge {
+    background-color: #e5e5f7;
+    background:rgba(187, 187, 216, 0.096);
+    background-size: 20px 20px;
+    background-position:  10px 10px;
+    overflow: hidden;
+    padding: 50px;
+}
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1.7em;
+}
+
+.knowledge__img{
+    width: 100%;
+    display: block;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+}
+.knowledge__paragraph {
+    font-size: 1.4em;
 }
 .footer{
     background-color: #3060a2;
