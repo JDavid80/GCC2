@@ -241,7 +241,8 @@ a{
 }
 
 .knowledge__img{
-    width: 100%;
+    padding-left: 50px;
+    width: 80%;
     display: block;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
 }
