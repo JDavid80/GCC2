@@ -25,7 +25,7 @@ a{
 .menu-navigation{
     background-color: var(--white);
     box-shadow: 1px 1px 5px 0px var(--gray);
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -113,6 +113,7 @@ a{
 .img-p {
     width: 100%;
     display: inline-block;
+    margin-top: 80px;
     margin-bottom: 30px;
 }
 .questions__offer {
@@ -399,9 +400,6 @@ a{
         padding: 20px 4px;
         margin: 0;
         
-    }
-    .img-p {
-        padding-top: 85px;
     }
     .testimony__body {
         grid-template-columns: 1fr;
