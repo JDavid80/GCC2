@@ -22,7 +22,7 @@ a{
     list-style: none;
     font-size: 1.1em;
 }
-.header{
+.menu-navigation{
     background-color: var(--white);
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
@@ -56,7 +56,7 @@ a{
 }
 .menu a{
     display: block;
-    padding: 30px 20px ;
+    margin: 30px 20px ;
     color: var(--blue);
     font-weight: 500;
 }
@@ -73,14 +73,14 @@ a{
     padding: 40px 20px;
 }
 .hamb-line {
-    background: var(--black);
+    background: var(--blue);
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
 } 
 .hamb-line::before, .hamb-line::after{
-    background: var(--black);
+    background: var(--blue);
     content: '';
     display: block;
     height: 100%;
@@ -117,6 +117,23 @@ a{
     display: inline-block;
     margin-bottom: 30px;
 }
+.questions__offer {
+    text-align: center;
+}
+.questions__copy {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.cta {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
 
 .testimony{
     background-color: rgba(187, 187, 216, 0.096);
@@ -124,12 +141,11 @@ a{
     padding: 30px 10px;
     margin-bottom: 20px;
 }
-.testimony__container{
+.testimony__container {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
-    margin-bottom: 10px;
 }
 .testimony__body{
     display: grid;
@@ -155,7 +171,9 @@ a{
     object-fit: cover;
     object-position: 10% 10%;
 }
-
+.imgimg {
+    width: 100%;
+}
 .testimony__texts{
     max-width: 800px;
     text-align: justify;
@@ -241,7 +259,7 @@ a{
 
 .knowledge__img{
     padding-left: 50px;
-    width: 80%;
+    width: 500px;
     display: block;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
 }
@@ -360,7 +378,9 @@ a{
         pointer-events: none;
         transition: .7s opacity;
     }
-
+    .menu-navigation {
+        position: fixed;
+    }
     .nav__link--show{
         --show: block;
         opacity:1 ;
@@ -377,7 +397,38 @@ a{
     .menu a {
         border-bottom: 0.1px solid #001A49;
     }
-
+    .img-p {
+        padding-top: 85px;
+    }
+    .testimony__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items: center;
+    }
+    .testimony__container {
+        grid-template-columns: 30px 1fr 30px;
+    }
+    .testimony__img {
+        width: 200px;
+        height: 200px;
+        display: block
+    }
+    .knowledge__img {
+       width: 300px;
+       padding-left: 2px;
+    }
+    .knowledge {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+    }
+    .knowledge__paragraph {
+        
+        width: 200px;
+        height: 200px;
+        display: block
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family-Poppins:wgth@300;400;700&display=swap');
