@@ -436,6 +436,10 @@ a{
         height: 200px;
         display: block
     }
+    .direccion {
+        width: 200px;
+        height: 100px;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family-Poppins:wgth@300;400;700&display=swap');
